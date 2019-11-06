@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-require('dotenv').config(); 
-var connect =mongoose.connect(process.env.DATABASE_URL,{ useNewUrlParser: true });
+//require('dotenv').config(); 
+var connect =mongoose.connect("mongodb://localhost/subscribers",{ useNewUrlParser: true });
 
 module.exports = connect;
