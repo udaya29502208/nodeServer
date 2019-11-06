@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
 //require('dotenv').config(); 
-mongoose.connect("mongodb://localhost/subscribers",{useUnifiedTopology: true, useNewUrlParser: true });
+mongoose.connect("mongodb+srv://udaya2208:Udaya@@2208@cluster0-8unsn.mongodb.net/test?retryWrites=true&w=majority",{useUnifiedTopology: true, useNewUrlParser: true });
 const db = mongoose.connection;
 db.on('error', (error) => console.error(error))
 db.once('open', () => console.log('connected to database'))
