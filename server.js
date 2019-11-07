@@ -9,4 +9,4 @@ db.once('open', () => console.log('connected to database'))
 app.use(express.json());
 const subscribersRouter = require('./routes/subscribers');
 app.use('/subscribers', subscribersRouter)
-app.listen(5000, () => console.log('server started'+"5000"));
+app.listen(27017, () => console.log('server started'+"5000"));
