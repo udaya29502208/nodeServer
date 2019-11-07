@@ -9,4 +9,4 @@ var app = express();
 app.use(express.json());
 const subscribersRouter = require('./routes/subscribers');
 app.use('/subscribers', subscribersRouter)
-app.listen(5000, () => console.log('server started'+"5000"));
+app.listen(process.env.PORT || 5000, () => console.log('server started'+process.env.PORT));
